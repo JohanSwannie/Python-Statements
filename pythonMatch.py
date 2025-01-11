@@ -10,7 +10,7 @@ def match1():
         case _:
             print('Oops Koekoe')
     
-# match1()
+match1()
     
 
 # * MATCH CASE - EXAMPLE 2
@@ -25,7 +25,7 @@ def match2():
         case _:
             print("Oops")
         
-# match2()
+match2()
         
 # * MATCH CASE - EXAMPLE 3
 
@@ -36,10 +36,10 @@ def match3(x):
         case _:
             print("No match found")
 
-# match3(50)
-# match3(200)
-# match3(150)
-# match3(225)
+match3(50)
+match3(200)
+match3(150)
+match3(225)
 
 # * MATCH CASE - EXAMPLE 4
 
@@ -55,10 +55,10 @@ def match4(input):
         case _:
             print("Data Structure Unknown!")
 
-# match4(['Cat', 'Dog'])
-# match4(['Donkey', 'Horse', 'Mule'])
-# match4(('BMW', 'Mercedes Benz', 'Toyota', 'Nissan', 'Volvo'))
-# match4(['Chicken', 'Kangaroo', 'Pukeko', 'Elephant'])
+match4(['Cat', 'Dog'])
+match4(['Donkey', 'Horse', 'Mule'])
+match4(('BMW', 'Mercedes Benz', 'Toyota', 'Nissan', 'Volvo'))
+match4(['Chicken', 'Kangaroo', 'Pukeko', 'Elephant'])
 
 # * MATCH CASE - EXAMPLE 5
 
@@ -71,6 +71,6 @@ def match5(person):
         case _:
             print("You must be kidding me - that is not a dictionary at all!")
 
-# match5({"name": "Sona", "surname": "Kaur"})
-# match5({"name": "Johan"})
-# match5({'sport', 'Rugby'})
+match5({"name": "Sona", "surname": "Kaur"})
+match5({"name": "Johan"})
+match5({'sport', 'Rugby'})
