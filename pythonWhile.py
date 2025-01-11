@@ -9,7 +9,7 @@ def whileOne(num):
             print(f"Number {num} is present in list1")
         num += 1
 
-# whileOne(1)
+whileOne(1)
 
 # * WHILE STATEMENT - EXAMPLE 2
 
@@ -21,7 +21,7 @@ def whileTwo(num2):
             print(f"Number {num2} left with no remainder")
         num2 -= 3
 
-# whileTwo(18)
+whileTwo(18)
 
 # * WHILE STATEMENT - EXAMPLE 3
 
