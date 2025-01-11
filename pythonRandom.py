@@ -6,7 +6,7 @@ def random1():
     my_list = ['apple', 'banana', 'orange', 'strawberry', 'mango']
     print(random.choice(my_list))
     
-# random1()
+random1()
 
 # * RANDOM EXAMPLE 2 - random.randrange()
 
@@ -17,7 +17,7 @@ def random2():
     chosen_number = numbers[random_index]
     print(f"The random chose number is {chosen_number}")
     
-# random2()
+random2()
 
 # * RANDOM EXAMPLE 3 - random.randint 1
 
@@ -28,7 +28,7 @@ def random3():
     chosen_number2 = numbers2[random_index2]
     print(f"The random chose number is {chosen_number2}")
     
-# random3()
+random3()
 
 # * RANDOM EXAMPLE 4 - random.randint 2
 
@@ -43,7 +43,7 @@ def random4():
     randomList.sort()  
     print(f"The random numbers chosen for our lotto list are {randomList}")
 
-# random4()
+random4()
 
 # * RANDOM EXAMPLE 5 - random with sample
 
@@ -52,7 +52,7 @@ def random5():
     anotherList = [19, 33, 7, 81, 57, 20, 44]
     print(sample(anotherList, 3))
 
-# random5()
+random5()
 
 # * RANDOM EXAMPLE 6 - random.shuffle
 
@@ -61,5 +61,5 @@ def random6():
     random.shuffle(anotherList2)
     print(anotherList2)
 
-# random6()
+random6()
 
