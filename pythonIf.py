@@ -11,8 +11,8 @@ def ifOne(a):
     else:
         print(f"a is equal than 10 because a = {a}")
     
-# for i in range(len(lista)):
-#     ifOne(lista[i]) 
+for i in range(len(lista)):
+    ifOne(lista[i]) 
     
 # * IF STATEMENT - EXAMPLE 2
 
@@ -26,7 +26,7 @@ def ifTwo():
     else:
         print(f"Billy is the oldest at {Billy} years old")
 
-# ifTwo()
+ifTwo()
 
 # * IF STATEMENT - EXAMPLE 3
 
