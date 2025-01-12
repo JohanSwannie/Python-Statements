@@ -14,7 +14,7 @@ def delOne():
         print("Test completed")
         print(f'If variables "b" and "c" still exist, then "b" is {b} and "c" is {c}')
     
-# delOne()
+delOne()
 
 # * DELETE STATEMENT - EXAMPLE 2
 
@@ -24,7 +24,7 @@ def delTwo(dict):
     
 dict1 = {"name": "Billy", "surname": "Brown", "age": 28}
 
-# delTwo(dict1)
+delTwo(dict1)
 
 # * DELETE STATEMENT - EXAMPLE 3
 
