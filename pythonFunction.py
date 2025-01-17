@@ -41,5 +41,17 @@ def sumTotals(**kwargs):
     
 sumTotals(firstName = "Gary", lastName = "Mower"),
 
+# * FUNCTION - EXAMPLE 6
 
+def fRecursion(numb, iteration):
+  iteration += 1
+  if(numb > 0):
+    result = numb + fRecursion(numb - 1, iteration)
+    print(f"Result is {result}")
+  else:
+    print(f'We have reached the end and the iterations are : {iteration}')
+    result = 0
+  return result
+
+fRecursion(9, 0)
 
