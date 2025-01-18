@@ -4,7 +4,7 @@
 def printIt():
     print("This is a test to print something")
     
-printIt()
+# printIt()
 
 # * FUNCTION - EXAMPLE 2
 
@@ -15,7 +15,7 @@ def whoWorksWhere(list1, list2):
 list1 = ['Johan', 'Raymond', 'James', 'Alex']
 list2 = ['HCLTech', 'Datacom', 'Inland Affairs', 'City Council']
 
-whoWorksWhere(list1, list2)
+# whoWorksWhere(list1, list2)
 
 # * FUNCTION - EXAMPLE 3
 
@@ -24,7 +24,7 @@ def sumTotals(*args):
     sum = n1 + n2
     print(f"The sum of all totals is {sum}")
     
-sumTotals(14, 33)
+# sumTotals(14, 33)
 
 # * FUNCTION - EXAMPLE 4
 
@@ -32,14 +32,14 @@ def sumTotals(*args):
     sum = args[0] + args[1] + args[2]
     print(f"The sum of all totals is {sum}")
     
-sumTotals(7, 88, 19)
+# sumTotals(7, 88, 19)
 
 # * FUNCTION - EXAMPLE 5
 
 def sumTotals(**kwargs):
     print(f"His name is {kwargs["firstName"]} {kwargs["lastName"]}")
     
-sumTotals(firstName = "Gary", lastName = "Mower"),
+# sumTotals(firstName = "Gary", lastName = "Mower"),
 
 # * FUNCTION - EXAMPLE 6
 
@@ -47,11 +47,10 @@ def fRecursion(numb, iteration):
   iteration += 1
   if(numb > 0):
     result = numb + fRecursion(numb - 1, iteration)
-    print(f"Result is {result}")
+    print(f"Result is now {result}")
   else:
     print(f'We have reached the end and the iterations are : {iteration}')
     result = 0
   return result
 
 fRecursion(9, 0)
-
