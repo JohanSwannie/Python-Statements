@@ -45,6 +45,9 @@ class Company:
     
   def fullName(self):
       return '{} {}'.format(self.name, self.surname)  
+  
+#   def fullName(self):
+#       return f"{self.name} {self.surname}"  
 
 person1 = Company("James", "Mower", 55)
 
