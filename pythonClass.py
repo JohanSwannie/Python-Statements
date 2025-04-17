@@ -9,12 +9,32 @@ print(classOne)
 # *  CLASS - EXAMPLE 2
 
 class classTwo:
-    b = 18; c = 7
-    
-value1 = classTwo();
-print(f"value1 can be {value1.b} and value1 can be {value1.c}")
+    pass
+
+employee1 = classTwo()
+employee2 = classTwo()
+
+employee1.fullName = "James Mower"
+employee1.email = "james.mower@company1.com"
+employee1.position = "Reporting Analyst"
+employee1.salary = 85000
+
+employee2.fullName = "Luke Brown"
+employee2.email = "luke.brown@company1.com"
+employee2.position = "Senior Data Analyst"
+employee2.salary = 95000
+
+print(employee1.email)
 
 # *  CLASS - EXAMPLE 3
+
+class classThree:
+    b = 18; c = 7
+    
+value1 = classThree();
+print(f"value1 can be {value1.b} and value1 can be {value1.c}")
+
+# *  CLASS - EXAMPLE 4
 
 class Company:
   def __init__(self, name, surname, age):
@@ -28,7 +48,7 @@ print(person1.name)
 print(person1.surname)
 print(person1.age)
 
-# *  CLASS - EXAMPLE 4
+# *  CLASS - EXAMPLE 5
 
 class Company2:
     def __init__(self, name2, surname2, age2):
