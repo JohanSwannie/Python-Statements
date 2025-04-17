@@ -77,3 +77,5 @@ person2 = Company2("Luke", "Brown", 29)
 print(person2)
 
 person2.printThem()
+
+print(Company2.printThem(person2))
