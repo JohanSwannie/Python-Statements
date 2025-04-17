@@ -83,13 +83,16 @@ print(Company2.printThem(person2))
 # *  CLASS - EXAMPLE 6
 
 class Employees:
+    
+    raisePercentage = 1.08
+    
     def __init__(self, first, last, payment):
         self.first = first
         self.last = last
         self.payment = payment
     
     def paymentRaise(self):
-        self.payment = int(self.payment * 1.08)
+        self.payment = int(self.payment * self.raisePercentage)
 
 
 emp1 = Employees("Mary", "Callahan", 55000)
@@ -99,3 +102,5 @@ print(f"The employee's salary before a raise is {emp1.payment}")
 emp1.paymentRaise()
 
 print(f"The employee's salary after a raise is {emp1.payment}")
+
+
