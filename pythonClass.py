@@ -84,13 +84,15 @@ print(Company2.printThem(person2))
 
 class Employees:
     
+    employees_total = 0
     raisePercentage = 1.08
     
     def __init__(self, first, last, payment):
         self.first = first
         self.last = last
         self.payment = payment
-    
+        Employees.employees_total += 1
+        
     def paymentRaise(self):
         self.payment = int(self.payment * self.raisePercentage)
 
