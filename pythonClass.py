@@ -95,5 +95,7 @@ class Employees:
 emp1 = Employees("Mary", "Callahan", 55000)
 
 print(f"The employee's salary before a raise is {emp1.payment}")
+
 emp1.paymentRaise()
+
 print(f"The employee's salary after a raise is {emp1.payment}")
