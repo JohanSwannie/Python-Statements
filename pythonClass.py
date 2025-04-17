@@ -42,6 +42,9 @@ class Company:
     self.surname = surname
     self.age = age
     self.email = name + "." + surname + "@gmail.com"
+    
+  def fullName(self):
+      return '{} {}'.format(self.name, self.surname)  
 
 person1 = Company("James", "Mower", 55)
 
@@ -49,6 +52,8 @@ print(person1.name)
 print(person1.surname)
 print(person1.age)
 print(person1.email)
+print(f"Full Name of person is {person1.fullName()}")
+
 
 # *  CLASS - EXAMPLE 5
 
