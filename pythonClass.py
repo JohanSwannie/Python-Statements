@@ -24,7 +24,7 @@ employee2.email = "luke.brown@company1.com"
 employee2.position = "Senior Data Analyst"
 employee2.salary = 95000
 
-print(employee1.email)
+print(f"Employee Name = {employee1.email} and Employee Salary = {employee1.salary}")
 
 # *  CLASS - EXAMPLE 3
 
