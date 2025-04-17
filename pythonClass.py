@@ -96,6 +96,10 @@ class Employees:
 
 
 emp1 = Employees("Mary", "Callahan", 55000)
+emp2 = Employees("Danny", "Black", 70000)
+
+print(emp1.__dict__)
+print(emp2.__dict__)
 
 print(f"The employee's salary before a raise is {emp1.payment}")
 
