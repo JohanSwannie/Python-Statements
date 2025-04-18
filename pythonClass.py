@@ -25,6 +25,7 @@ employee2.position = "Senior Data Analyst"
 employee2.salary = 95000
 
 print(f"Employee Name = {employee1.email} and Employee Salary = {employee1.salary}")
+print(f"Employee Name = {employee2.email} and Employee Salary = {employee2.salary}")
 
 # *  CLASS - EXAMPLE 3
 
