@@ -117,4 +117,20 @@ emp1.paymentRaise()
 
 print(f"The employee's salary after a raise is {emp1.payment}")
 
+# *  CLASS - EXAMPLE 7
+
+class Employees2:
+    
+    def __init__(self, fullName, salary):
+        self.fullName = fullName
+        self.salary = salary
+        
+    @classmethod
+    def salaryRaise(cls, amount):
+        pass
+    
+
+    
+
+
 
