@@ -121,13 +121,32 @@ print(f"The employee's salary after a raise is {emp1.payment}")
 
 class Employees2:
     
+    raisePercentage2 = 1.08
+    
     def __init__(self, fullName, salary):
         self.fullName = fullName
         self.salary = salary
         
     @classmethod
     def salaryRaise(cls, amount):
-        pass
+        cls.raisePercentage2 = amount
+        
+    @classmethod
+    def createObjects(cls, string):
+        fullName, salary = string.split('-')
+        return cls(fullName, salary)
+        
+empl1_string = "Gary Handover-88000"
+empl2_string = "Natasha Goodman-95000"
+
+empl1 = Employees2.createObjects(empl1_string)
+empl2 = Employees2.createObjects(empl2_string)
+
+Employees2.salaryRaise(1.10)
+
+print(f"Employees raise percentage = {Employees2.raisePercentage2}")
+print(f"Employee One raise percentage = {empl1.raisePercentage2}")
+print(f"Employee Two raise percentage = {empl2.raisePercentage2}")
     
 
     
