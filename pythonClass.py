@@ -46,6 +46,8 @@ class Company:
     
   def fullName(self):
       return '{} {}'.format(self.name, self.surname)  
+
+# * OR
   
 #   def fullName(self):
 #       return f"{self.name} {self.surname}"  
@@ -57,7 +59,6 @@ print(person1.surname)
 print(person1.age)
 print(person1.email)
 print(f"Full Name of person is {person1.fullName()}")
-
 
 # *  CLASS - EXAMPLE 5
 
@@ -103,9 +104,12 @@ emp2 = Employees("Danny", "Black", 70000)
 
 print(f"Total of employees = {Employees.employees_total}")
 
-print(Employees.__dict__)
-print(emp1.__dict__)
-print(emp2.__dict__)
+print(f"Employees Dictionary = {Employees.__dict__}")
+print("-----------------------------------------------------------------------------------------------------------")
+print(f"Employee One Dictionary = {emp1.__dict__}")
+print("-----------------------------------------------------------------------------------------------------------")
+print(f"Employee Two Dictionar = {emp2.__dict__}")
+print("-----------------------------------------------------------------------------------------------------------")
 
 print(f"The employee's salary before a raise is {emp1.payment}")
 
