@@ -147,6 +147,11 @@ Employees2.salaryRaise(1.10)
 print(f"Employees raise percentage = {Employees2.raisePercentage2}")
 print(f"Employee One raise percentage = {empl1.raisePercentage2}")
 print(f"Employee Two raise percentage = {empl2.raisePercentage2}")
+
+print(empl1.fullName)
+print(int(empl1.salary))
+print(empl2.fullName)
+print(int(empl2.salary))
     
 
     
