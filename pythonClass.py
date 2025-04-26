@@ -127,6 +127,11 @@ class Employees2:
         self.fullName = fullName
         self.salary = salary
         
+    def salaryIncrease(self):
+        calc_salary = int(self.salary)
+        calc_salary = round(calc_salary * self.raisePercentage2)
+        self.salary = calc_salary
+        
     @classmethod
     def salaryRaise(cls, amount):
         cls.raisePercentage2 = amount
@@ -142,7 +147,16 @@ empl2_string = "Natasha Goodman-95000"
 empl1 = Employees2.createObjects(empl1_string)
 empl2 = Employees2.createObjects(empl2_string)
 
+print(f"The salary of employee One before increase is {empl1.salary}")
+print(f"The salary of employee Two before increase is {empl2.salary}")
+
 Employees2.salaryRaise(1.10)
+
+empl1.salaryIncrease()
+empl2.salaryIncrease()
+
+print(f"The salary of employee One after increase is {empl1.salary}")
+print(f"The salary of employee Two after increase is {empl2.salary}")
 
 print(f"Employees raise percentage = {Employees2.raisePercentage2}")
 print(f"Employee One raise percentage = {empl1.raisePercentage2}")
