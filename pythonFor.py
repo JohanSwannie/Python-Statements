@@ -16,6 +16,7 @@ def forTwo(list1):
         for i in range(len(element)):
             underline += "-"
         print(underline)
+        print(" ")
     
 list1 = ["Car", 'Bicycle', "Helicopter", "Bus", "Train", "Plane"]
 
