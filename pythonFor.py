@@ -34,6 +34,8 @@ cars = ["BMW", "Mercedes Benz", "Toyota", "Renault", "Volvo", "Nissan", "Ford", 
 
 forThree(cars)
 
+print("-------------------------------------------------------------------------------")
+
 # * FOR LOOP - EXAMPLE 4
 
 def forFour(cars2):
