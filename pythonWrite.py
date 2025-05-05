@@ -28,8 +28,8 @@ output_file2 = "output2.txt"
     
 with open(output_file2, "w") as file2:
         for line in linesRead:
-            outputLine = line.strip()
-            file2.write(outputLine + "\n") 
+            outputLine = line.strip() + "\n"
+            file2.write(outputLine) 
         
 print(f"Data written to {output_file1} and {output_file2}")
 
