@@ -62,5 +62,4 @@ flattenedData = flattenJson(jsonData)
 
 with open('output3.txt', 'w') as file3:
     for key, value in flattenedData.items():
-        file3.write(f"{key}: {value}\n")
-        
+        file3.write(f"{key}: {value}\n")  
