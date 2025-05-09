@@ -17,6 +17,8 @@ with open(output_file1, "w") as file1:
         line = delimiter.join(row) + "\n" 
         file1.write(line) 
 
+print(f"Data written to {output_file1}")
+
 # * Read from one Flat File & Write to another Flat File
 
 input_file = "input.txt"
@@ -31,7 +33,7 @@ with open(output_file2, "w") as file2:
             outputLine = line.strip() + "\n"
             file2.write(outputLine) 
         
-print(f"Data written to {output_file1} and {output_file2}")
+print(f"Data written to {output_file2}")
 
 # * Write a Flat File from a JSON File
 
@@ -61,3 +63,4 @@ flattenedData = flattenJson(jsonData)
 with open('output3.txt', 'w') as file3:
     for key, value in flattenedData.items():
         file3.write(f"{key}: {value}\n")
+        
