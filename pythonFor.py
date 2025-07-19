@@ -8,7 +8,8 @@ def separate():
     
 def forOne(a):
     for i in range(a):
-        print(i)
+        print('Number', i)
+              
         
 forOne(3)
 
