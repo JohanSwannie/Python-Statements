@@ -27,6 +27,13 @@ separate()
 
 # * FOR LOOP - EXAMPLE 3
 
+for i in range(2, 20, 4):
+    print("'", "Johan" * i, "'", " " * 2, " - ", "PRINTED", i, "TIMES")
+
+separate()
+
+# * FOR LOOP - EXAMPLE 4
+
 def forTwo(list1):
     for element in list1:
         print(element)
@@ -42,7 +49,7 @@ forTwo(list1)
 
 separate()
 
-# * FOR LOOP - EXAMPLE 4
+# * FOR LOOP - EXAMPLE 5
 
 def forThree(cars):
     for car in cars:
@@ -56,7 +63,7 @@ forThree(cars)
 
 separate()
 
-# * FOR LOOP - EXAMPLE 5
+# * FOR LOOP - EXAMPLE 6
 
 def forFour(cars2):
     for car2 in cars2:
@@ -70,7 +77,7 @@ forFour(cars2)
 
 separate()
             
-# * FOR LOOP - EXAMPLE 6
+# * FOR LOOP - EXAMPLE 7
 
 def forFive(grp1, grp2):
     for g1 in grp1:
@@ -84,7 +91,7 @@ forFive(group1, group2)
 
 separate()
 
-# * FOR LOOP - EXAMPLE 7 - Find the Smallest Number
+# * FOR LOOP - EXAMPLE 8 - Find the Smallest Number
 
 smallest = float('inf')
 list = [2, 5, 12, 9, 74, 1, 15]
@@ -96,7 +103,7 @@ print('Smallest', smallest)
 
 separate()
 
-# * FOR LOOP - EXAMPLE 8 - Find the Biggest Number
+# * FOR LOOP - EXAMPLE 9 - Find the Biggest Number
 
 biggest = float('-inf')
 
