@@ -32,4 +32,15 @@ list4.sort(reverse=True)
 
 print('list4 sorted = ', list4)
 
+# * EXAMPLE 5 - CREATE A NEW SORT FROM EXISTING LIST AND LEAVE EXISTING LIST UNCHANGED
+
+list5 = ["Gert", "Jan", "Koos", "Danie", "Hannes", "Zorro"]
+
+list6 = sorted(list5)
+
+print('list5 unchanged = ', list5)
+
+print('list6 sorted = ', list6)
+
+
 
