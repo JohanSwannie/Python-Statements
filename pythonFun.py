@@ -73,3 +73,15 @@ set1 = set(list3)
 
 print(set1)
 
+# * Fun Tricks 7 - Summing after creating a list
+
+k = [i for i in range(5)]
+print(sum(k))
+
+# * Fun Tricks 8 - Reverse a string by using slicing
+
+string1 = "They went up the hill"
+
+reversedString1 = string1[:: -1]
+
+print(reversedString1)
