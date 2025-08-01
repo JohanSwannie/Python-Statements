@@ -16,4 +16,17 @@ l = {"Carl": 30, "Gary": 28, "Eugene": 33}
 m = {**j, **k, **l}
 print(m)
 
+# * Fun Tricks 3 - Iterate with enumerate() instead of range(len())
+
+# * Old Way
+
+numberList = [21, 51, 16, 9, 78, 5]
+
+for i in range(len(numberList)):
+    if numberList[i] > 50:
+        numberList[i] = "Clear Winner"
+        
+print(numberList)
+
+
 
