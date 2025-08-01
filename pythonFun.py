@@ -54,4 +54,14 @@ evenNumbers2 = [x + x for x in range(1, 11)]
 
 print(evenNumbers2)
 
+# * Fun Tricks 5 - Sort complex iterables
+
+personDict = [{"name": "Jacky", "age": 29}, 
+              {"name": "Luke", "age": 19}, 
+              {"name": "Carlos", "age": 22},
+              {"name": "Benjamin", "age": 23}
+        ]
+personDict_Sorted = sorted(personDict, key=lambda x: x["age"])
+
+print(personDict_Sorted)
 
