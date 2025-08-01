@@ -38,4 +38,20 @@ for index1, number in enumerate(numberList2):
 
 print(numberList2)
 
+# * Fun Tricks 4 - Use list comprehension instead of for loops
+
+# * Old Way
+
+evenNumbers = []
+for x in range(1, 11):
+    evenNumbers.append(x + x)
+
+print(evenNumbers)
+
+# * Better Way
+
+evenNumbers2 = [x + x for x in range(1, 11)]
+
+print(evenNumbers2)
+
 
