@@ -28,5 +28,14 @@ for i in range(len(numberList)):
         
 print(numberList)
 
+# * Better Way
+
+numberList2 = [10, 15, 76, 4, 18, 55]
+
+for index1, number in enumerate(numberList2):
+    if number > 50:
+        numberList2[index1] = "Clear Winner"
+
+print(numberList2)
 
 
