@@ -65,3 +65,11 @@ personDict_Sorted = sorted(personDict, key=lambda x: x["age"])
 
 print(personDict_Sorted)
 
+# * Fun Tricks 6 - Create sets from lists to eliminate duplicates
+
+list3 = ['Cat', 14, True, "Dog", 28, 14, "Cat", False, 21, True]
+
+set1 = set(list3)
+
+print(set1)
+
