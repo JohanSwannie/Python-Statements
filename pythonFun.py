@@ -94,8 +94,6 @@ string = 'racecar'
 
 x, y = 0, len(string) - 1
 
-print(x, y)
-
 isPally = True
 
 while x < y:
