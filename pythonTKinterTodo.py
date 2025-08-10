@@ -38,7 +38,7 @@ root.title("To-Do List")
 
 task_entry = tk.Entry(root, width=150)
 
-task_entry.pack(pady=10)
+task_entry.pack(pady=20)
 
 add_button = tk.Button(root, text="Add Task", command=add_task)
 
@@ -52,7 +52,7 @@ clear_button = tk.Button(root, text="Clear All Tasks", command=clear_tasks)
 
 clear_button.pack(pady=8)
 
-tasks_listbox = tk.Listbox(root, width=50, height=10)
+tasks_listbox = tk.Listbox(root, width=150, height=30)
 
 tasks_listbox.pack(pady=40)
 
