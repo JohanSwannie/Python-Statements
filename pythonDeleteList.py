@@ -27,3 +27,43 @@ for index in sorted(indices_to_remove, reverse=True):
     del list2[index]
 #    or list2.pop(index)
 print(list2)
+
+# * EXAMPLE 4 - Remove the 1st element
+
+list3 = ['a', True, 'Yes', 9.45, False, 'Mary', 80]
+
+list3.pop(0);
+
+print(list3)
+
+list4 = ['No', 18, False, None, 14.45, 'Yes']
+
+del list4[0]
+
+print(list4)
+
+list5 = [15, 1, 10, 54, 19, 34]
+
+list5 = list5[1:]
+
+print(list5)
+
+# * EXAMPLE 5 - Remove the last element
+
+list6 = ['a', True, 'Yes', 9.45, False, 'Mary', 80]
+
+list6.pop(-1);
+
+print(list6)
+
+list7 = ['No', 18, False, None, 14.45, 'Yes']
+
+del list7[-1]
+
+print(list7)
+
+list8 = [12, 10, 19, 2, 9, 11]
+
+list8 = list8[:-1]
+
+print(list8)
