@@ -8,8 +8,6 @@ def create_color_grid_app():
     root = tk.Tk()
     root.title("Color Grid")
 
-    # A dictionary of 81 colors with their names and hex codes
-    # This list can be customized with any valid Tkinter color names or hex codes
     color_map = {
         'red': '#FF0000', 'orange': '#FFA500', 'yellow': '#FFFF00', 'lime': '#00FF00', 'green': '#008000',
         'teal': '#008080', 'cyan': '#00FFFF', 'blue': '#0000FF', 'navy': '#000080',
@@ -30,44 +28,35 @@ def create_color_grid_app():
         'paleturquoise': '#AFEEEE'
     }
 
-    # Extract color names for display
     color_names = list(color_map.keys())
     
-    # Check if there are 81 colors, and pad if necessary
     num_colors = 81
     if len(color_names) > num_colors:
         color_names = color_names[:num_colors]
     elif len(color_names) < num_colors:
-        # Pad with a default color if needed
         color_names.extend(['lightgray'] * (num_colors - len(color_names)))
 
-    # Function to update the label text
     def update_label(color_name):
         color_name_label.config(text=f"Selected Color: {color_name.capitalize()}")
 
-    # Create a frame to hold the grid of color boxes
     grid_frame = tk.Frame(root)
     grid_frame.pack(padx=10, pady=10)
 
-    # Create and place 81 color buttons (9x9 grid)
     for i in range(81):
         row = i // 9
         col = i % 9
         color_name = color_names[i]
-        hex_code = color_map.get(color_name, '#FFFFFF')  # Use white as fallback
+        hex_code = color_map.get(color_name, '#FFFFFF') 
         
-        # Use a lambda to capture the current color name for each button
         button = tk.Button(grid_frame,
                            bg=hex_code,
                            width=3, height=1,
                            command=lambda name=color_name: update_label(name))
         button.grid(row=row, column=col, padx=2, pady=2)
 
-    # Create a label at the bottom to display the color name
     color_name_label = tk.Label(root, text="Click a box to see its color name", font=("Helvetica", 12))
     color_name_label.pack(pady=10)
 
     root.mainloop()
 
-# Run the program
 create_color_grid_app()
