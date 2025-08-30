@@ -67,3 +67,11 @@ list8 = [12, 10, 19, 2, 9, 11]
 list8 = list8[:-1]
 
 print(list8)
+
+# * EXAMPLE 6 - Delete the complete list
+
+list9 = [18, 55, 7, 10, 29, 13, 30, 18, 27, 44]
+
+list9.clear()
+
+print(f"List 9 is now empty - {list9}")
