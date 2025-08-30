@@ -24,5 +24,6 @@ list2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
 indices_to_remove = [1, 2, 3, 4, 5, 10]
 
 for index in sorted(indices_to_remove, reverse=True):
-    list2.pop(index)
+    del list2[index]
+#    or list2.pop(index)
 print(list2)
