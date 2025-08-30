@@ -23,10 +23,28 @@ list3.reverse()
 
 print(list3)
 
-# * EXAMPLE 4 - Sort the list
+# * EXAMPLE 4 - Sort a simple list
 
 list4 = [19, 7, 13, 1, 10, 15, 5, 20, 29, 9, 4]
 
 list4.sort()
 
 print(list4)
+
+# * EXAMPLE 5 - Sort a complicated list
+
+def sortFunc(x):
+  return x['age']
+
+people = [
+  {'name': 'Luke', 'age': 20},
+  {'name': 'Paul', 'age': 29},
+  {'name': 'John', 'age': 26},
+  {'name': 'Mary', 'age': 18},
+  {'name': 'Trudy', 'age': 28},
+  {'name': 'Louis', 'age': 30}
+]
+
+people.sort(key=sortFunc)
+
+print(people)
