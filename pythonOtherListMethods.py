@@ -45,6 +45,6 @@ people = [
   {'name': 'Louis', 'age': 30}
 ]
 
-people.sort(key=sortFunc)
+people.sort(key=sortFunc, reverse=True)
 
 print(people)
